@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Назар Сизько — Python-разработчик</title>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <div class="name">Назар Сизько</div>
+    <nav>
+        <a href="#about">Обо мне</a>
+        <a href="#skills">Навыки</a>
+        <a href="#projects">Проекты</a>
+        <a href="#contacts">Контакты</a>
+    </nav>
+</header>
+
+<div class="content">
+
+    <div class="block" id="about">
+        <img src="img/me.jpg" alt="Фото" class="photo">
+        <div class="about-text">
+            <h1>Назар Сизько</h1>
+            <p class="position">Python backend-разработчик</p>
+            <p>Студент 2 курса, направление «Прикладная информатика». Занимаюсь бэкендом
+        на Python около двух лет: пишу REST API, работаю с базами данных, разворачиваю
+        проекты в Docker.</p>
+        </div>
+    </div>
+
+    <div class="block" id="skills">
+        <h2>Технологии</h2>
+        <div class="icons">
+            <div class="icon">
+                <img src="img/python.svg" alt="Python">
+                <p>Python</p>
+            </div>
+            <div class="icon">
+                <img src="img/django.svg" alt="Django">
+                <p>Django</p>
+            </div>
+            <div class="icon">
+                <img src="img/fastapi.svg" alt="FastAPI">
+                <p>FastAPI</p>
+            </div>
+            <div class="icon">
+                <img src="img/postgresql.svg" alt="PostgreSQL">
+                <p>PostgreSQL</p>
+            </div>
+            <div class="icon">
+                <img src="img/docker.svg" alt="Docker">
+                <p>Docker</p>
+            </div>
+            <div class="icon">
+                <img src="img/git.svg" alt="Git">
+                <p>Git</p>
+            </div>
+            <div class="icon">
+                <img src="img/linux.svg" alt="Linux">
+                <p>Linux</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="block" id="projects">
+        <h2>Проекты</h2>
+        <table>
+            <tr>
+                <th>Проект</th>
+                <th>Описание</th>
+                <th>Стек</th>
+                <th>Год</th>
+            </tr>
+            <tr>
+                <td>Telegram-бот для расписания</td>
+                <td>Бот присылает расписание пар группы, парсит его с сайта университета</td>
+                <td>Python, aiogram, SQLite</td>
+                <td>2025</td>
+            </tr>
+            <tr>
+                <td>API для списка задач</td>
+                <td>REST API с регистрацией, JWT-авторизацией и CRUD для задач</td>
+                <td>FastAPI, PostgreSQL, SQLAlchemy</td>
+                <td>2025</td>
+            </tr>
+            <tr>
+                <td>Блог</td>
+                <td>Сайт с постами, комментариями и админкой</td>
+                <td>Django, PostgreSQL, Docker</td>
+                <td>2026</td>
+            </tr>
+            <tr>
+                <td>Сокращатель ссылок</td>
+                <td>Сервис коротких ссылок с подсчётом переходов</td>
+                <td>FastAPI, PostgreSQL, Docker</td>
+                <td>2026</td>
+            </tr>
+        </table>
+    </div>
+
+</div>
+
+<footer id="contacts">
+    <p>Email: nazar.sizko@mail.ru | Telegram: @nazar_sizko | GitHub: github.com/nazar-sizko</p>
+    <p>&copy; 2026 Назар Сизько</p>
+</footer>
+
+</body>
+</html>
