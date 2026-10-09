@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Обратная связь — Назар Сизько</title>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <a href="index.html" class="name">Назар Сизько</a>
+    <nav>
+        <a href="index.html#about">Обо мне</a>
+        <a href="index.html#skills">Навыки</a>
+        <a href="index.html#projects">Проекты</a>
+        <a href="index.html#contacts">Контакты</a>
+        <a href="feedback.html" class="active">Обратная связь</a>
+        <a href="login.html">Вход</a>
+    </nav>
+</header>
+
+<div class="content">
+
+    <div class="block">
+        <h2>Обратная связь</h2>
+        <p class="form-intro">Есть вопрос по проектам, замечание или идея? Заполните форму —
+            отвечу на указанную почту.</p>
+
+        <form class="feedback-form" action="https://httpbin.org/post" method="post" enctype="multipart/form-data">
+
+            <div class="field">
+                <label for="fio">ФИО</label>
+                <input type="text" id="fio" name="fio" placeholder="Иванов Иван Иванович" required>
+            </div>
+
+            <div class="field">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="ivanov@mail.ru" required>
+            </div>
+
+            <fieldset class="field field-wide">
+                <legend>Откуда вы узнали обо мне?</legend>
+                <div class="chips">
+                    <label class="chip">
+                        <input type="radio" name="source" value="search" required>
+                        <span>Поиск в интернете</span>
+                    </label>
+                    <label class="chip">
+                        <input type="radio" name="source" value="social">
+                        <span>Социальные сети</span>
+                    </label>
+                    <label class="chip">
+                        <input type="radio" name="source" value="github">
+                        <span>GitHub</span>
+                    </label>
+                    <label class="chip">
+                        <input type="radio" name="source" value="friends">
+                        <span>От знакомых</span>
+                    </label>
+                    <label class="chip">
+                        <input type="radio" name="source" value="other">
+                        <span>Другое</span>
+                    </label>
+                </div>
+            </fieldset>
+
+            <div class="field field-wide">
+                <label for="type">Тип обращения</label>
+                <select id="type" name="type" required>
+                    <option value="" disabled selected>Выберите тип обращения</option>
+                    <option value="complaint">Жалоба</option>
+                    <option value="suggestion">Предложение</option>
+                </select>
+            </div>
+
+            <div class="field field-wide">
+                <label for="message">Текст сообщения</label>
+                <textarea id="message" name="message" rows="7" placeholder="Опишите ваш вопрос или предложение" required></textarea>
+            </div>
+
+            <div class="field field-wide">
+                <label for="attachment">Вложения</label>
+                <input type="file" id="attachment" name="attachment">
+            </div>
+
+            <label class="checkbox field-wide">
+                <input type="checkbox" name="consent" value="yes" required>
+                <span>Даю согласие на обработку персональных данных</span>
+            </label>
+
+            <div class="field-wide">
+                <button type="submit">Отправить</button>
+            </div>
+
+        </form>
+    </div>
+
+</div>
+
+<footer id="contacts">
+    <p>Email: nazar.sizko@mail.ru | Telegram: @nazar_sizko | GitHub: github.com/nazar-sizko</p>
+    <p>&copy; 2026 Назар Сизько</p>
+</footer>
+
+</body>
+</html>
